@@ -1,5 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
+var HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: [
@@ -17,6 +18,10 @@ module.exports = {
   module: {
     loaders: [
       {
+        test: /\.pug$/,
+        loader: "pug-html-loader"
+      },
+      {
         test: /\.js$/,
         include: path.join(__dirname, 'src'),
         loader: 'babel-loader',
@@ -32,5 +37,10 @@ module.exports = {
   },
   devServer: {
     contentBase: "./src"
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './src/index.pug'
+    })
+  ]
 };
