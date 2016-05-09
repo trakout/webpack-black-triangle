@@ -1,6 +1,6 @@
 # webpack-black-triangle
 
-A minimal, development-focussed template to get you up and running with Webpack, Babel & LESS.
+A minimal, development-focussed template to get you up and running with Webpack, Babel & Stylus.
 
 Read how it works at [jamesknelson.com](http://jamesknelson.com/write-es2015-with-instant-feedback-using-webpack-dev-server-and-babel/).
 
@@ -40,4 +40,3 @@ Then open [localhost:8080](http://localhost:8080/).
 ## Why a black triangle?
 
 Because [this](http://rampantgames.com/blog/?p=7745).
-
